@@ -19,6 +19,24 @@
       text-align: center;
       padding: 48px 24px;
     }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    .lang-switch a {
+      font-size: 14px;
+      color: #007AFF;
+      text-decoration: none;
+      padding: 4px 12px;
+      border: 1px solid #007AFF;
+      border-radius: 6px;
+    }
+    .lang-switch a.active {
+      background: #007AFF;
+      color: white;
+    }
     .logo {
       width: 80px;
       height: 80px;
@@ -86,6 +104,11 @@
 </head>
 <body>
   <div class="container">
+    <div class="lang-switch">
+      <a class="active" href="index.html">中文</a>
+      <a href="index-en.html">English</a>
+    </div>
+
     <div class="logo">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M13 3L4 14h7v7l9-11h-7V3z"/>
