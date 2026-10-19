@@ -276,13 +276,12 @@ footer p { font-size: 13px; color: rgba(245,245,247,0.4); }
 .highlight h2 { font-size: 48px; font-weight: 700; letter-spacing: -1.5px; margin-bottom: 24px; }
 .highlight p { font-size: 20px; color: rgba(245,245,247,0.6); line-height: 1.7; margin-bottom: 48px; }
 .highlight-visual {
-  width: 100%; max-width: 600px; aspect-ratio: 4/3;
-  background: linear-gradient(135deg, #0a0a1a, #1a1a3e);
-  border-radius: 24px; margin: 0 auto;
-  display: flex; align-items: center; justify-content: center;
+  width: 100%; max-width: 860px;
+  background: #0a0a1a;
+  border-radius: 24px; margin: 0 auto; overflow: hidden;
   border: 1px solid rgba(255,255,255,0.1);
 }
-.highlight-visual svg { width: 80px; height: 80px; fill: white; opacity: 0.15; }
+.highlight-visual img { width: 100%; height: auto; display: block; }
 
 .privacy-note {
   padding: 80px 24px;
@@ -297,19 +296,15 @@ footer p { font-size: 13px; color: rgba(245,245,247,0.4); }
 .privacy-note a:hover { text-decoration: underline; }
 
 /* ── Simple pages (support / privacy) ── */
+main { flex: 1; display: flex; flex-direction: column; }
 .simple-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #f5f5f7;
-  color: #1d1d1f;
-}
-.simple-page main {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 24px 48px;
+  padding: 96px 24px 48px;
+  background: #f5f5f7;
+  color: #1d1d1f;
 }
 .simple-card {
   background: white;
@@ -348,8 +343,7 @@ footer p { font-size: 13px; color: rgba(245,245,247,0.4); }
 .email-btn svg { width: 18px; height: 18px; fill: white; }
 
 /* Privacy page */
-.privacy-page { background: #f5f5f7; color: #1d1d1f; min-height: 100vh; }
-.privacy-page main { padding: 80px 24px 48px; }
+.privacy-page { flex: 1; background: #f5f5f7; color: #1d1d1f; padding: 128px 24px 48px; }
 .privacy-content { max-width: 680px; margin: 0 auto; }
 .privacy-content h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
 .privacy-content .date { font-size: 14px; color: #86868b; margin-bottom: 40px; }
