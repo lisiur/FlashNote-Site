@@ -160,7 +160,7 @@ footer p { font-size: 13px; color: rgba(245,245,247,0.4); }
   margin-bottom: 48px;
   letter-spacing: -0.5px;
 }
-.hero-badges { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.hero-badges { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; width: 100%; }
 .badge {
   display: flex;
   align-items: center;
@@ -177,20 +177,6 @@ footer p { font-size: 13px; color: rgba(245,245,247,0.4); }
 .badge:hover { background: #005FCC; transform: translateY(-2px); }
 .badge svg { width: 22px; height: 22px; fill: white; }
 .badge-sub { font-size: 11px; font-weight: 400; opacity: 0.8; line-height: 1.2; }
-.badge-coming {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: rgba(255,255,255,0.1);
-  color: rgba(245,245,247,0.6);
-  text-decoration: none;
-  padding: 14px 28px;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  border: 1px solid rgba(255,255,255,0.12);
-}
-.badge-coming svg { width: 22px; height: 22px; fill: rgba(245,245,247,0.5); }
 
 .section-label {
   text-align: center;
