@@ -177,6 +177,7 @@ footer p { font-size: 13px; color: rgba(245,245,247,0.4); }
 .badge:hover { background: #005FCC; transform: translateY(-2px); }
 .badge svg { width: 22px; height: 22px; fill: white; }
 .badge-sub { font-size: 11px; font-weight: 400; opacity: 0.8; line-height: 1.2; }
+.hero-badges .badge { min-width: 200px; justify-content: center; }
 
 .section-label {
   text-align: center;
