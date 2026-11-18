@@ -160,24 +160,14 @@ footer p { font-size: 13px; color: rgba(245,245,247,0.4); }
   margin-bottom: 48px;
   letter-spacing: -0.5px;
 }
-.hero-badges { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; width: 100%; }
+.hero-badges { display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap; width: 100%; }
 .badge {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  background: #007AFF;
-  color: white;
-  text-decoration: none;
-  padding: 14px 28px;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  transition: background 0.2s, transform 0.2s;
+  transition: opacity 0.2s;
 }
-.badge:hover { background: #005FCC; transform: translateY(-2px); }
-.badge svg { width: 22px; height: 22px; fill: white; }
-.badge-sub { font-size: 11px; font-weight: 400; opacity: 0.8; line-height: 1.2; }
-.hero-badges .badge { min-width: 200px; justify-content: center; }
+.badge:hover { opacity: 0.85; }
+.badge img { height: 40px; width: auto; display: block; }
 
 .section-label {
   text-align: center;
